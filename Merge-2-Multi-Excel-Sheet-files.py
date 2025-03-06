@@ -11,7 +11,6 @@ def merge_excel_files(file1, file2, output_file):
     # Create a new Excel writer for the output file using openpyxl engine
     with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
         # Process all sheets from the first file
-        # Process all sheets from the first file
         for sheet in xls1.sheet_names:
             # Use the already loaded xls1 object to parse the sheet
             df = xls1.parse(sheet)
